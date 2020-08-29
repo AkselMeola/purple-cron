@@ -1,0 +1,26 @@
+
+Installing instructions
+============================
+
+
+Navigate to src directory and call make.
+
+% cd src/
+% make
+% make install
+
+NOTE: Make install just copies the compiled purplecron.so and scripts to your users home directory under .purple/plugins. 
+
+Local testing
+============================
+% cd src/
+% make
+% make try
+
+Kills the current pidgin instance and restars it after it has copied the plugin.
+This for quickly testing the plugin in action.
+
+
+# Requires
+- jansson-devel
+- curl-devel

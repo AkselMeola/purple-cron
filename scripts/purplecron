@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# This file is called for every cron interval. 
+# It executes executable flagged scripts in the ~/.purple/purplecron.d directory and return the output.
+#
+# Scripts have to be prefixed with a number from 00 to 99. 
+# With this the scripts priority can be set - lower prefixes will be run first. 
+#
+
+
+dir="$(dirname "$0")"; 
+cd "$dir"
+dir="${dir}/purplecron.d"
+
+if test -d "$dir"; then
+	for i in {00..99}; do
+
+		#execute scripts
+		ls -1 "$dir/$i"* 2>/dev/null | while read script; do
+			test -x "$script" && "$script"
+		done;
+
+		wait;
+	done;	
+fi
+
+exit 0
