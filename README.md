@@ -21,8 +21,9 @@ JSON:
 {"recipient": "3083501905061751", "message": "This is a message to be sent"}
 ```
 
-*recipient* - Id of the receiver - chat id, buddy id
-*message* - Message content
+Where:
+- *recipient* - Id of the receiver - chat id, buddy id
+- *message* - Message content
 
 
 
