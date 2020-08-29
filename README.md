@@ -3,10 +3,10 @@ Purple Cron
 
 A plugion for Pidgin IM and Finch to periodically run scripts and reply to conversations
 
-# Install
+## Install
 See INSTALL
 
-# Setting up cron scripts
+## Setting up cron scripts
 
 Add scripts to `~/.purple/purplecron.d`. Scripts must be executable (chmod +x).
 Every script must start with a number 00..99. For example `01_report_bithdays.sh`. This allows you to configure some sort of priority of the messages.
@@ -26,7 +26,7 @@ JSON:
 
 
 
-# TODO / Ideas
+### TODO / Ideas
 
 - Allow specifying a broadcast "to every conversation" messages. Maybe ?
 - Add one extra callback for sync updates - send buddy lists, statuses etc so that background scripts could get some info of current state. 
