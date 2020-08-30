@@ -4,7 +4,7 @@ Purple Cron
 A plugion for Pidgin IM and Finch to periodically run scripts and reply to conversations
 
 ## Install
-See INSTALL
+See [INSTALL](INSTALL)
 
 ## Setting up cron scripts
 

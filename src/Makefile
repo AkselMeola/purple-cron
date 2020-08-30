@@ -77,7 +77,7 @@ install-user:
 
 # How the fuck to figure out the lib64 and lib usage ??? 
 install:
-	cp purplecron.so /usr/lib/purple-2/.purple/plugins/
+	cp purplecron.so /usr/lib/purple-2/
 
 try:
 	-purple-remote quit

@@ -2,14 +2,13 @@
 Installing instructions
 ============================
 
+    wget https://github.com/AkselMeola/purple-cron/archive/v1.0.1.tar.gz
+	tar -xvf v1.0.1.tar.gz
+	cd purple-cron-1.0.1/src
+	make 
+    make install-user
 
-Navigate to src directory and call make.
-
-% cd src/
-% make
-% make install
-
-NOTE: Make install just copies the compiled purplecron.so and scripts to your users home directory under .purple/plugins. 
+NOTE: Install just copies the compiled purplecron.so and scripts to your users home directory under .purple/plugins. 
 
 Local testing
 ============================
@@ -19,8 +18,3 @@ Local testing
 
 Kills the current pidgin instance and restars it after it has copied the plugin.
 This for quickly testing the plugin in action.
-
-
-# Requires
-- jansson-devel
-- curl-devel
