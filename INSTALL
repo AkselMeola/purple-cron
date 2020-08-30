@@ -2,10 +2,10 @@
 Installing instructions
 ============================
 
-    wget https://github.com/AkselMeola/purple-cron/archive/v1.0.1.tar.gz
-	tar -xvf v1.0.1.tar.gz
-	cd purple-cron-1.0.1/src
-	make 
+    wget https://github.com/AkselMeola/purple-cron/archive/v1.0.2.tar.gz
+    tar -xvf v1.0.2.tar.gz
+    cd purple-cron-1.0.2/src
+    make 
     make install-user
 
 NOTE: Install just copies the compiled purplecron.so and scripts to your users home directory under .purple/plugins. 
