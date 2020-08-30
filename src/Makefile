@@ -72,8 +72,12 @@ $(TARGET): $(OBJ)
 clean:
 	rm -f $(TARGET) $(OBJECTS)/*.o *~ core $(INCDIR)/*~
 
-install:
+install-user:
 	cp purplecron.so $(HOME)/.purple/plugins/
+
+# How the fuck to figure out the lib64 and lib usage ??? 
+install:
+	cp purplecron.so /usr/lib/purple-2/.purple/plugins/
 
 try:
 	-purple-remote quit
