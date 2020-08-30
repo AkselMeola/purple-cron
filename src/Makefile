@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-VERSION = $(shell cat ../VERSION)
-
 TARGET := purplecron.so
 
 #############################
